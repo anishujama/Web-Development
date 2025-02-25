@@ -56,11 +56,11 @@ else
 }
 
 
-a= 6;
+a= 8;
 b=7;
 let c = a>b?(a-b):(b-a);
 
-// console.log(c);
+console.log(c);
 
 /*
 translate to: 
