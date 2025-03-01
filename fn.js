@@ -1,3 +1,4 @@
+// factorial number
 let a = 6
 
 function factorial(number){
