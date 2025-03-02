@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<style>
+    .red{
+        color:red
+    }
+</style>
+  </head>
+  <body>
+    <div class="container red bg-green">
+      <div
+        class="box"
+        style="display: flex"
+        data-createdby="Anish"
+        data-conceptby="anaish"
+      >
+        hey i am a box
+      </div>
+      <div class="box">hey i am a box</div>
+    </div>
+    <script>
+    //   let div = document.createElement("div");
+    //   div.innerHTML = "i have inserted <b> by anish</b>"
+    //   div.setAttribute("class", "created");
+    //   document.querySelector(".container").append(div)
+    let cont = document.querySelector(".container")
+    cont.insertAdjacentHTML("beforebegin", "<b> i am under the water please help me </b>");
+    cont.insertAdjacentHTML("afterbegin", "<b> i am under the water please help me </b>");
+    cont.insertAdjacentHTML("beforeend", "<b> i am under the water please help me </b>");
+    cont.insertAdjacentHTML("afterend", "<b> i am under the water please help me </b>");
+
+    </script>
+  </body>
+</html>
