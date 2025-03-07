@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .black{
+    background-color: #484848;
+    height: 320px;
+    width: 300px;
+    border-radius: 12px;
+}
+
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#select{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+
+}
+</style>
+<body>
+    <select  id="select">
+<option value="light">light</option>
+<option value="dark">dark</option>
+    </select>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+
+    <script>
+        let select = document.getElementById("select");
+        let black = document.getElementsByClassName("black");
+        let body = document.getElementById("body"); 
+        select.onchange = changeMode;
+
+        function changeMode(){
+            if (select.value == "dark") {
+                body.style.backgroundColor = "gray";
+                black[0].style.backgroundColor = "white"
+                black[1].style.backgroundColor = "white"
+                black[2].style.backgroundColor = "white"
+                black[3].style.backgroundColor = "white"
+                black[4].style.backgroundColor = "white"
+            }
+            else{
+                body.style.backgroundColor = "white";
+                black[0].style.backgroundColor = "gray"
+                black[1].style.backgroundColor = "gray"
+                black[2].style.backgroundColor = "gray"
+                black[3].style.backgroundColor = "gray"
+                black[4].style.backgroundColor = "gray"
+            }
+        }
+    </script>
+</body>
+</html>
